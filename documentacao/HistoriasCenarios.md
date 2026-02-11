@@ -9,7 +9,7 @@
 ## Inicial: O cliente seleciona o pet a se mudar os dados
 ## Normal: Ele seleciona o que precisa modificar (Foto , Idade , Peso , etc) e coloca as novas informações no lugar
 ## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
-## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
+## Outros: Falta de moderação nos conteúdos pode ser problemático
 ## Conclusão: Os dados do pet se modificam de acordo com 
 
 # 3.Como usuário quero adotar um pet
