@@ -1,11 +1,18 @@
-# 1.Quero adicionar os dados do animal a ser entregue para adoção no sistema
+# 1.Como usuário quero adicionar os dados do animal a ser entregue para adoção no sistema
 ## Inicial: O cliente coloca imagem, nome, peso, tamanho, idade, raça, genêro e outras observações necessárias dentro do sistema para serem vísiveis aos outros usuários
 ## Normal: O pet fica vísivel para todos exceto quem o cadastrou para adoção, alguém se interessa pela adoção e contata o usuário
 ## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
 ## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
 ## Conclusão: Após conversa com o possível adotante, e aceitação do pet ser adotado se deleta do banco de dados os dados do pet para adoção
 
-# 2.Quero adotar um pet
+# 2.Como usuário quero modificar os dados do animal cadastrado no sistema
+## Inicial: O cliente seleciona o pet a se mudar os dados
+## Normal: Ele seleciona o que precisa modificar (Foto , Idade , Peso , etc) e coloca as novas informações no lugar
+## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
+## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
+## Conclusão: Os dados do pet se modificam de acordo com 
+
+# 3.Como usuário quero adotar um pet
 ## Inicial: Vendo os animais disponíveis para adoção, clico em algum deles
 ## Normal: Leva a tela de contato com quem pôs o pet para adoção, e eles começam a se comunicar sobre a possível adoção
 ## O que pode dar errado: Dificuldades humanas no processo (imoralidade ou simplesmente informações falsas)
