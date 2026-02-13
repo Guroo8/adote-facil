@@ -7,16 +7,16 @@
 
 # 2.Como usuário quero modificar os dados do animal cadastrado no sistema
 ## Inicial: O cliente seleciona o pet a se mudar os dados
-## Normal: Ele seleciona o que precisa modificar (Foto , Idade , Peso , etc) e coloca as novas informações no lugar
+## Normal: O pet tem de ser removido e readicionado com os dados certos
 ## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
 ## Outros: Falta de moderação nos conteúdos pode ser problemático
-## Conclusão: Os dados do pet se modificam de acordo com 
+## Conclusão: O pet reaparece no banco de dados com os dados modificados
 
 # 3.Como usuário quero adotar um pet
 ## Inicial: Vendo os animais disponíveis para adoção, clico em algum deles
 ## Normal: Leva a tela de contato com quem pôs o pet para adoção, e eles começam a se comunicar sobre a possível adoção
 ## O que pode dar errado: 
-## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
+## Outros: Possível não se executar a adoção e manter os status do pet
 ## Conclusão: Um pet é adotado e removido do banco de dados
 
 # 4.Como administrador quero enviar mensagem à um usuário que colocou um pet para adoção
