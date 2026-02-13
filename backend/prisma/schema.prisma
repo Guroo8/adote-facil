@@ -1,0 +1,81 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  animals     Animal[]
+  user1Chats  Chat[]        @relation("User1Chats")
+  user2Chats  Chat[]        @relation("User2Chats")
+  UserMessage UserMessage[]
+}
+
+enum AnimalStatus {
+  available
+  adopted
+  removed
+}
+
+model Animal {
+  id          String       @id @default(uuid())
+  userId      String
+  name        String
+  type        String
+  gender      String
+  race        String?
+  description String?
+  status      AnimalStatus @default(available)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  images AnimalImage[]
+}
+
+model AnimalImage {
+  id        String   @id @default(uuid())
+  animalId  String
+  imageData Bytes
+  createdAt DateTime @default(now())
+
+  animal Animal @relation(fields: [animalId], references: [id], onDelete: Cascade)
+}
+
+model Chat {
+  id        String   @id @default(uuid())
+  user1Id   String
+  user2Id   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user1    User          @relation("User1Chats", fields: [user1Id], references: [id], onDelete: Cascade)
+  user2    User          @relation("User2Chats", fields: [user2Id], references: [id], onDelete: Cascade)
+  messages UserMessage[]
+}
+
+model UserMessage {
+  id        String   @id @default(uuid())
+  chatId    String
+  senderId  String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  chat   Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  sender User @relation(fields: [senderId], references: [id], onDelete: Cascade)
+}
