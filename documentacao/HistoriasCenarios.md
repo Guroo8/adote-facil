@@ -15,6 +15,14 @@
 # 3.Como usuário quero adotar um pet
 ## Inicial: Vendo os animais disponíveis para adoção, clico em algum deles
 ## Normal: Leva a tela de contato com quem pôs o pet para adoção, e eles começam a se comunicar sobre a possível adoção
-## O que pode dar errado: Dificuldades humanas no processo (imoralidade ou incidentes inesperados)
+## O que pode dar errado: 
 ## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
 ## Conclusão: Um pet é adotado e removido do banco de dados
+
+# 4.Como administrador quero enviar mensagem à um usuário que colocou um pet para adoção
+## Inicial: O administrador clica no usuário e aparece a tela de chat
+## Normal: Ele manda a mensagem desejada e talvez remova o pet colocado para adoção tmeporariamente
+## O que pode dar errado: 
+## Outros: Os dados de presença do usuário podem ser vísiveis para o administrador
+## Conclusão: O administrador se resolveu com o usuário
+
