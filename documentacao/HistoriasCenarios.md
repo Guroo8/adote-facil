@@ -1,9 +1,9 @@
 # 1.Como usuário quero adicionar os dados do animal a ser entregue para adoção no sistema
-## Inicial: O cliente coloca imagem, nome, peso, tamanho, idade, raça, genêro e outras observações necessárias dentro do sistema para serem vísiveis aos outros usuários
-## Normal: O pet fica vísivel para todos exceto quem o cadastrou para adoção, alguém se interessa pela adoção e contata o usuário
+## Inicial: O cliente vai para tela de "disponibilizar animal para adoção"
+## Normal: O cliente coloca imagem, nome, peso, tamanho, idade, raça, genêro e outras observações necessárias dentro do sistema para serem vísiveis aos outros usuários
 ## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
 ## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
-## Conclusão: Após conversa com o possível adotante, e aceitação do pet ser adotado se deleta do banco de dados os dados do pet para adoção
+## Conclusão: O pet fica na tela de disponível para adoção no site
 
 # 2.Como usuário quero colocar o pet cadastrado do sistema como adotado
 ## Inicial: O cliente vai a tela de pets cadastrado por ele
