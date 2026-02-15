@@ -5,18 +5,18 @@
 ## Outros: Falta de moderação nos conteúdos(ambos de pet e de conversas) pode ser problemático
 ## Conclusão: Após conversa com o possível adotante, e aceitação do pet ser adotado se deleta do banco de dados os dados do pet para adoção
 
-# 2.Como usuário quero modificar os dados do animal cadastrado no sistema
-## Inicial: O cliente seleciona o pet a se mudar os dados
-## Normal: O pet tem de ser removido e readicionado com os dados certos
-## O que pode dar errado: Dados não serem válidos(impossíveis ou erro de informação)
-## Outros: Falta de moderação nos conteúdos pode ser problemático
-## Conclusão: O pet reaparece no banco de dados com os dados modificados
+# 2.Como usuário quero colocar o pet cadastrado do sistema como adotado
+## Inicial: O cliente vai a tela de pets cadastrado por ele
+## Normal: O pet clica no botão de "adotado"
+## O que pode dar errado: 
+## Outros: Ele pode também remover o pet caso precise recadastrar ou simplesmente não tem mais o pet
+## Conclusão: Os dados do pet se removem do banco de dados
 
 # 3.Como usuário quero adotar um pet
 ## Inicial: Vendo os animais disponíveis para adoção, clico em algum deles
 ## Normal: Leva a tela de contato com quem pôs o pet para adoção, e eles começam a se comunicar sobre a possível adoção
 ## O que pode dar errado: 
-## Outros: Possível não se executar a adoção e manter os status do pet
+## Outros: Possível filtrar pets por caracteristicas deles
 ## Conclusão: Um pet é adotado e removido do banco de dados
 
 # 4.Como administrador quero enviar mensagem à um usuário que colocou um pet para adoção
