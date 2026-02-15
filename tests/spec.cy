@@ -1,7 +1,6 @@
 describe('template spec', () => {
   it('passes', () => {
     cy.visit('http://localhost:3000/login')
-    //cy.contains('type').click()
     cy.get('[name="email"]').type('Temp@gmail.com')
     cy.get('[name="password"]').type('TempTemp')
     cy.get('.sc-ea747762-0').click()
